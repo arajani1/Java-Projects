@@ -1,0 +1,50 @@
+Test Cases 
+
+Username Tests
+
+Description												Valid Examples			Invalid Examples
+
+All characters belong to alphabet letters 				12.34@uci.edu			sam!!smith@uci.edu
+(lower and uppercase), numbers, ".", "@", "-",									*sam@uci.edu
+ and "_".
+ 
+There should be exactly one "@" 						s@uci.edu				sam@smith@uci.edu		
+(the part before "@" is called local-part and									sam.smith.uci.edu
+the part after that is a domain).
+
+
+The local-part and domain cannot be empty.				s@uci.edu				@ucu.edi
+																				samsmith@
+																				
+There should be no two consecutive '.'					sam.smith@uci.edu		..a@uci.edu
+
+
+The domain name can be divided into several				samsmith@uci.educ		samsmith@uci.e
+parts by ".". The last part consists of 
+2 to 4 alphabet letters.
+
+
+No spaces permitted.									samsmith@uci.educ		sam smith@uci.edu
+
+
+
+
+Password Tests
+
+Description												Valid Examples			Invalid Examples
+
+Has to be at least 7 characters long.	 				#BLACKlimo30			#BLA
+
+ 
+There has to be at least one special character			<BLACKlimo30			BLACKlimo30		
+(#, *, &, %, !, etc.).								
+
+
+No spaces permitted.									#BLACK_limo30			#BLACK limo30
+																				
+																				
+There should be at least one uppercase					#Blimo30				#blacklimo30
+and one lowercase letter.
+							
+
+There should be at least one numerical character.		#BLACKlo30432			#BLACKlimo
