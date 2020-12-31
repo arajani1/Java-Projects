@@ -1,5 +1,4 @@
 This sample tests a login webpage using Java and Selenium Webdriver.
-
 All files with written code are found in the src/TestingFramework folder. 
 
 
