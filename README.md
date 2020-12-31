@@ -3,7 +3,7 @@ All files with written code are found in the src/TestingFramework folder.
 
 
 
-Here is the functionality of each of files in this file:
+Here is the functionality of each of file in this folder:
 
 driver.java - sets up Selenium driver and runs test cases
 
